@@ -1,0 +1,230 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #F9E0BB;
+    color: #0f0f0f;
+        }
+h1{
+    font-size: 36px;
+    text-align: center;
+}
+h2{
+    font-size: 28px;
+    text-align: center;
+}
+p{
+    margin: 20px 0;
+}
+
+img{
+    max-width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px -5px #4D4545;
+    background-color: #884A39;
+    color: #F9E0BB;
+}
+
+#menu-principal{
+    display: flex;
+    font-size: 20px;
+
+}
+.menu-item{
+    padding: 16px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    min-height: 100vh;
+    padding-top: 20vh;
+
+}
+#inicio{
+    justify-content: space-around;
+}
+
+.fotopresentacion{
+    margin-bottom: 20px;
+}
+.fotopresentacion img {
+    border-radius: 50%;
+    width: 400px;
+    height: 300px;
+
+}
+
+/* este css modifica la etqueta del articulo que tiene el titulo principal y el parrafo*/
+.presentacion{
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.btn{
+    background-color: #C38154;
+    color: #F9E0BB;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#contact{
+    display: flex;
+    
+}
+.seccion2{
+    background-color: #C38154;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 20px;
+    
+}
+
+#iconos{
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+    
+   }
+
+footer{
+    display: flex;
+    background-color: #884A39;
+    color: #F9E0BB;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.experiencia{
+    text-align: justify;
+    list-style-type:circle;
+    margin: 12px;
+
+}
+#menu-principal{
+    display: none;
+}
+#menu-mobile{
+    display:flex;
+    width:auto;}
+
+    
+
+@media (min-width: 1024px){
+    h1{
+        font-size: 48px;
+        text-align: left;
+    }
+    h2{
+        font-size: 32px;
+    }
+    p{
+        text-align: justify;
+    }
+    section#inicio{
+        flex-direction:row;
+        text-align: justify;
+        
+
+    }
+    article.presentacion{
+        width: 50%;
+        text-align: left;
+
+    }
+    #iconos {
+        display: flex;
+        gap: 200px;
+        padding: 20px;
+            
+    }
+    #menu-principal{
+        display: flex;
+    }
+    #menu-mobile{
+        display:none;
+        width:auto;}
+    
+}
+li.menu-item:hover,
+li.menu-item a.active,
+#iconos:hover,
+a.btn:hover{
+    background-color: #FFC26F;
+    transition: background-color, 0,3s ;
+
+}
