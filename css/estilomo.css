@@ -1,8 +1,8 @@
 #container{
     background-color: #393646;
     position: relative;
-    width: 80px;
-    height: 40px;
+    width: 70px;
+    height: 30px;
     box-shadow: inset 4px 4px 6px #cecece,
                 inset -4px -4px 6px #fff;
     margin: 0px auto;
@@ -16,8 +16,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transform: scale(.7);
     border-radius: 25px;
     background-color: linear-gradient(145deg, #d8d8d8, #ffffff);
@@ -30,7 +30,7 @@
 }
 body.active{
     background-color: black;
-    color: #ECE5C7;
+    color: #F4EEE0;
     transition: background-color, 0.7 ms;
 
 }
