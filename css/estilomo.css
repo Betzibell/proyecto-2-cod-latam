@@ -1,5 +1,5 @@
 #container{
-    background-color:#F9E0BB;
+    background-color: #393646;
     position: relative;
     width: 80px;
     height: 40px;
@@ -21,17 +21,17 @@
     transform: scale(.7);
     border-radius: 25px;
     background-color: linear-gradient(145deg, #d8d8d8, #ffffff);
-    box-shadow: 3px 3px 8px #c4c4c4,
-               -3px -3px 8px #fff;
+    box-shadow: 3px 3px 8px #6D5D6E,
+               -3px -3px 8px #6D5D6E;
 }
 
 #container.active .toggle{
     left:40px;
 }
 body.active{
-    background-color: #1A120B;
-    color: #F9E0BB;
-    transition: background-color, 1ms;
+    background-color: black;
+    color: #ECE5C7;
+    transition: background-color, 0.7 ms;
 
 }
 

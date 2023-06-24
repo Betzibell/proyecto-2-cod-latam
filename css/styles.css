@@ -58,7 +58,7 @@ body{
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     line-height: 1.5;
-    background-color: #F9E0BB;
+    background-color: #ECE5C7;
     color: #0f0f0f;
         }
 h1{
@@ -87,8 +87,8 @@ header{
     top: 0;
     left: 0;
     box-shadow: 0 3px 10px -5px #4D4545;
-    background-color: #884A39;
-    color: #F9E0BB;
+    background-color: #0E2954;
+    color: #ECE5C7;
 }
 
 #menu-principal{
@@ -120,6 +120,7 @@ section{
     border-radius: 50%;
     width: 400px;
     height: 300px;
+    /*border:#0f0f0f solid ;*/
 
 }
 
@@ -132,8 +133,8 @@ section{
 
 
 .btn{
-    background-color: #C38154;
-    color: #F9E0BB;
+    background-color: #526D82;
+    color: #ECE5C7;
     padding: 12px 20px;
     border-radius: 50px;
     font-size: 20px;
@@ -145,7 +146,7 @@ section{
     
 }
 .seccion2{
-    background-color: #C38154;
+    background-color: #526D82;
     border-radius: 10px;
     justify-content: center;
     text-align: center;
@@ -162,8 +163,8 @@ section{
 
 footer{
     display: flex;
-    background-color: #884A39;
-    color: #F9E0BB;
+    background-color: #0E2954;
+    color: #ECE5C7;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -221,10 +222,10 @@ footer{
     
 }
 li.menu-item:hover,
-li.menu-item a.active,
+/*li.menu-item a.active,*/
 #iconos:hover,
 a.btn:hover{
-    background-color: #FFC26F;
+    background-color: #393646;
     transition: background-color, 0,3s ;
 
 }
